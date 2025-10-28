@@ -1,0 +1,64 @@
+name: lecturers_attendance
+description: Attendance app for lecturers (QR + attendees)
+publish_to: 'none'
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # لدعم تعدد اللغات (Localization) في Flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # الحزم الأساسية والمضافة مسبقاً
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6
+  qr_flutter: ^4.1.0
+  uuid: ^4.4.0
+  dio: 5.4.0
+  get_storage: 2.1.1
+  geolocator: 10.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # This line ensures that the Material Icons font is included.
+  uses-material-design: true
+
+  # تعريف الأصول (Assets)
+  assets:
+    # تم حذف: - assets/images/
+    - assets/fonts/
+
+  # تعريف الخطوط (Fonts)
+  fonts:
+    # 2.1 تعريف عائلة خط Cairo
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+          weight: 800
+
+    # 2.2 تعريف عائلة خط Tajawal
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
